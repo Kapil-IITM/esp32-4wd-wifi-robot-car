@@ -59,6 +59,15 @@ Speed of the motors is controlled using PWM (Pulse Width Modulation).
 3. Common ground is maintained across all components
 
 ---
+
+
+
+
+https://github.com/user-attachments/assets/9e606230-55df-4102-b74a-cbc3bb22ab4e
+
+---
+
+
 Wiring Details
 
 ESP32 to L298N (Control Connections)

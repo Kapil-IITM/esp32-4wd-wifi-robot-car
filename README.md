@@ -59,7 +59,40 @@ Speed of the motors is controlled using PWM (Pulse Width Modulation).
 3. Common ground is maintained across all components
 
 ---
+Wiring Details
 
+ESP32 to L298N (Control Connections)
+GPIO26 → IN1
+GPIO27 → IN2
+GPIO14 → IN3
+GPIO12 → IN4
+GPIO25 → ENA (PWM for left motor speed)
+GPIO33 → ENB (PWM for right motor speed)
+
+Motors to L298N
+OUT1 → Left Motor +
+OUT2 → Left Motor -
+OUT3 → Right Motor +
+OUT4 → Right Motor -
+
+Battery to L298N
+Battery + (11.1V) → 12V (L298N)
+Battery - → GND (L298N)
+
+ESP32 Power (using Buck Converter)
+Battery + → Buck Converter IN+
+Battery - → Buck Converter IN-
+Buck Converter OUT+ → ESP32 VIN (or 5V)
+Buck Converter OUT- → ESP32 GND
+
+Common Ground (Important)
+Battery GND, L298N GND, ESP32 GND, and Buck Converter GND must all be connected together
+
+L298N Jumper Settings
+Remove ENA jumper
+Remove ENB jumper
+
+---
 👨‍💻 Author
 
 Kapil

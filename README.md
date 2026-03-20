@@ -67,6 +67,12 @@ https://github.com/user-attachments/assets/9e606230-55df-4102-b74a-cbc3bb22ab4e
 
 ---
 
+Web UI
+
+![gamma ui st1](https://github.com/user-attachments/assets/f0d7cc4d-fd75-40c1-9337-69297a8805bb)
+
+
+---
 
 Wiring Details
 
